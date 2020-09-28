@@ -1,5 +1,6 @@
 class Stack {
     buffer = [];
+    
     constructor(...values) {
         this.buffer = [...values]
     }
