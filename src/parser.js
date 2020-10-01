@@ -1,5 +1,5 @@
 /* 
-  TODO:
+  [+] TODO:
     1. Make a function that accepts tokens and returns ATS.
       Use operator precedence parsing.
       * Associate every token with left binding power and operational function
@@ -146,5 +146,3 @@ function parse(tokens) {
   
   return parseTree;
 }
-
-console.log(parse());

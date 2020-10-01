@@ -18,9 +18,5 @@ function divideTokens(inputString) {  // TODO: add second argument to be an 'une
     else throw new Error('unexpected identifier');
   });
 
-  console.log(inputString.replace(/\(/gm, ' ( ').replace(/\)/gm, ' ) ').split(/\s+/))
-
   return lexicalEntities;
 }
-
-console.log(divideTokens('f(n) = 35'))
