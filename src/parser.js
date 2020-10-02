@@ -8,7 +8,7 @@
         If the operator does not manipulate the tokens on its left, 
         associate it with a null denotative function. 
         Identifiers and numbers also have a nud function associated with them.
-*/ 
+*/
 
 function parse(tokens) {
   const parseTree = [];
@@ -141,8 +141,10 @@ function parse(tokens) {
   });
   
   while (tokenize().type !== "(end)") {
-    parseTree.push(expression(0));
+    parseTree.push(defineExpression(0));
   }
   
   return parseTree;
 }
+
+module.exports = parse;

@@ -17,3 +17,5 @@ class Stack {
         return this.buffer
     }
 }
+
+module.exports = Stack;
